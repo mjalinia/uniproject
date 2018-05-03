@@ -1,0 +1,40 @@
+/* best for p */ 
+
+@font-face {
+    font-family: vazir;
+    src: url(../font/vazir/Vazir.eot);
+    src: url(../font/vazir/Vazir.ttf);
+    src: url(../font/vazir/Vazir.woff);
+}
+
+.body{
+    font-family: vazir;
+    
+}
+
+.body{
+    direction: rtl;
+}
+
+
+
+p{
+    line-hight:24px;
+    font-weight:300;
+}
+
+
+.jumbotron {
+
+    padding: 5rem 2rem;
+    text-align: center;
+    
+
+}
+
+
+.card-body > p > img {
+    width: 3px;
+    height: auto;
+}
+    

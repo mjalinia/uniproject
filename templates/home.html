@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+{% block title %}خانه | {{ block.super }}{% endblock %}
+
+    {% if user.is_authenticated %}
+       
+    {% else %}
+        
+    {% endif %} 
+
+
+
+
+
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">وبلاگ دانشگاه پیام نور رشت</h1>
+  <br>
+  
+  <p class="lead"> اطلاع رسانی و مطالب آموزشی</p>
+  <br>
+  
+  <p class="lead">
+    <a class="btn btn-success btn-lg" href="{% url 'post_list' %}" role="button">اطلاعیه ها</a>
+    <a class="btn btn-success btn-lg" href="{% url 'learn_list' %}" role="button"> مطالب آموزشی</a>
+  </p>
+</div>
+{% endblock %}

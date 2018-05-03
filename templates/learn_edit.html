@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}بروز رسانی آموزش| {{ block.super }}{% endblock %}
+{% block content %}
+    <h1> بروز رسانی آموزش </h1>
+    <form action="" method="post">{% csrf_token %}
+      {{ form|crispy }}
+    <button class="btn btn-info ml-2" type="submit">بروزرسانی</button>
+</form>
+{% endblock %}

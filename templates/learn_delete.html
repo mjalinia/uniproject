@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>حذف پست آموزشی</h1>
+    <form action="" method="post">{% csrf_token %}
+    <br>
+    <br>
+    <br>
+      <p>آیا از پاک کردن این پست اطمینان دارید؟ "{{ object.title}}"?</p>
+      <br>
+      <br>
+      <br>
+      <button class="btn btn-danger ml-2" type="submit">حذف کن</button>
+      <br>
+      <br>
+      <br>
+      <br>
+    </form>
+{% endblock %}

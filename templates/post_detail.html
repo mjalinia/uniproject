@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="post-entry col-lg-9" >
+  <h2>{{ object.news }}</h2>
+  <br>
+  <br>
+  <h5>{{ object.content|safe }}</h2>
+
+  <br>
+  <br>
+  <hr>
+    <p>نویسنده : {{ object.author }}</p>
+    <p>{{ object.date }}</p>
+  </div>
+ {% if user.is_authenticated %}
+  <p><a href="{% url 'post_edit' post.pk %}">بروزرسانی</a> | <a href="{% url 'post_delete' post.pk %}">حذف</a></p>
+{%endif%}
+ 
+  <p>  <a href="{% url 'post_list' %}">برگشت به صفحه اطلاعیه ها</a></p>
+{% endblock content %}
